@@ -244,6 +244,101 @@ footer {
   }
 }
 
+/* ===== ABOUT PAGE ===== */
+
+.about-hero {
+  height: 300px;
+  background: url('../images/mahi13.jpg') no-repeat center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero h1 {
+  font-size: 40px;
+}
+
+.about-content {
+  display: flex;
+  padding: 50px;
+  background: white;
+}
+
+.about-text {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 70%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: #007bff;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.stat-box h2 {
+  font-size: 30px;
+}
+
+/* Team */
+.team {
+  text-align: center;
+  padding: 50px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team-card img {
+  border-radius: 50%;
+}
+
+/* Active nav link */
+nav ul li a.active {
+  color: #00c3ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .team-container {
+    flex-direction: column;
+  }
+} 
 
 /* ===== SERVICES PAGE ===== */
 
