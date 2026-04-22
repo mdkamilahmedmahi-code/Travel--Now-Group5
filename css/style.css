@@ -463,3 +463,77 @@ nav ul li a.active {
   }
 }
 
+/* ===== CONTACT PAGE ===== */
+
+.contact-page {
+  height: 100vh;
+  background: url('../images/mahi6.jpg') no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glassmorphism Form */
+.contact-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  width: 350px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.contact-box h2 {
+  margin-bottom: 10px;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact-box textarea {
+  height: 80px;
+}
+
+.contact-box button {
+  width: 100%;
+  padding: 10px;
+  background: #00c3ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.contact-box button:hover {
+  background: #009edc;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Keep navbar readable on image */
+.contact-page nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-box {
+    width: 90%;
+  }
+}
